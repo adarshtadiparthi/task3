@@ -1,0 +1,187 @@
+/*Signup form*/
+:root{
+    --primary-color: #318DFA;
+    --secondary-color: #0E2F56;
+    --other-color: #89baf5;
+    --gradient : linear-gradient(65deg,rgba(36, 133, 249, 100%), rgba(120, 181, 252, 1) 100%);
+}
+
+@media only screen and (max-width: 500px){
+    .SignupImage{
+        display: none;
+    }
+    .signUpPage{ 
+        background-image: var(--gradient);
+        padding: 7vw 0vw;
+        height: 100vh;
+    }
+
+    .signUpForm , .signInForm{
+        width: 70vw;
+        background-color: white;
+        padding: 2vw 0vw;
+        margin: 10vh auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .signUpForm h1 , .signInForm h1{
+        font-size: 6.5vw;
+        font-family: Poppins;
+        color: var(--secondary-color);
+    }
+
+    .signUpForm button , .signInForm button{
+        width: 50vw;
+        padding: 1vw 0;
+        background-color: var(--secondary-color);
+        color: white;
+        font-size: 3.5vw;
+        margin: 2vw 0vw;
+        border-radius: 0.6vw;
+        cursor: pointer;
+    }
+
+    .errorMessage{
+        color: red;
+        font-size: 2vw;
+        width: 50vw;
+        display: none;
+    }
+
+    .name, .email , .number,.typePassword,.confirmPassword{
+        width: 50vw;
+    }
+
+    .signUpForm input , .signInForm input{
+        padding: 1vw;
+        font-size: 3.5vw;
+        margin: 2.25vw 0vw;
+        border: 0.1vw solid var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 0.6vw;
+    }
+
+    .formInput label{
+        font-size: 2.25vw;
+        font-weight: 500;
+        color: var(--secondary-color);
+    }
+
+    .Confirmation{
+        width: 50vw;
+        padding: 0.75vw 0vw;
+        text-align: center;
+        color: white;
+        background-color: green;
+        font-size: 2.25vw;
+        font-family: Poppins;
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 501px){
+    .SignupImage{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 55vw;
+    }
+
+    .signUpPage{
+        position: relative;
+        background-image: var(--gradient);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 10vw 0vw;
+    }
+
+    .signUpForm{
+        width: 77vw;
+        margin: 0 0vw 0 15vw;
+        padding: 4vw 0vw 2vw 41vw;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 10;
+    }
+
+    .signUpForm h1 , .signInForm h1{
+        font-size: 3vw;
+        font-family: Poppins;
+        color: var(--secondary-color);
+    }
+
+    input{
+        padding: 0.5vw;
+        font-size: 1.5vw;
+        margin: 0.5vw 2vw 0.5vw 0;
+        border: 0.1vw solid var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 0.6vw;
+    }
+
+    .formInput label{
+        font-size: 1.2vw;
+        font-weight: 500;
+        color: var(--secondary-color);
+    }
+
+    .errorMessage{
+        color: red;
+        font-size: 1vw;
+        width: 33vw;
+        display: none;
+    }
+
+    .name, .email , .number,.typePassword,.confirmPassword{
+        width: 33vw;
+    }
+
+    .signUpForm button, .signInForm button{
+        width: 33vw;
+        padding: 0.75vw 0;
+        background-color: var(--secondary-color);
+        color: white;
+        font-size: 1.5vw;
+        margin: 1vw 2vw 0.5vw 0;
+        border-radius: 0.6vw;
+        cursor: pointer;
+    }
+
+    .Confirmation{
+        width: 33vw;
+        padding: 0.5vw 0vw;
+        text-align: center;
+        color: white;
+        background-color: green;
+        font-size: 1.5vw;
+        font-family: Poppins;
+        opacity: 0;
+    }
+}
+
+.signUpForm input:focus{
+   border: none;
+}
+.signUpForm input::placeholder , .signInForm input::placeholder{
+    color: var(--other-color);
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+}
+
+.signUpForm input:invalid[focused = true]{
+    border: 0.1vw solid red;
+}
+
+.signUpForm input:invalid[focused = true] ~ .errorMessage{
+    display: block;
+}
+
+
+

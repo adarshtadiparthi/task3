@@ -1,0 +1,242 @@
+.landingPage{
+    background-color: white;
+}
+@media only screen and (min-width: 1200px){
+    .landingPage{
+        width: 70vw;
+        min-height: 75vh;
+    }
+
+    .textarea{
+        width: 55vw;
+    }
+
+    .textarea{
+        font-size: 1.5vw;
+        background: none;
+    }
+
+    .post-form{
+        width: 65vw;
+    }
+
+    .alert{
+        width: 65vw;
+        font-size: 1.5vw;
+    }
+
+    .container{
+        min-height: 100vh;
+        background-image: var(--gradient);
+        display: flex;
+        justify-content: center;
+        padding: 15vh 0 10vh 0;
+    }
+
+    .post{
+        width: 65vw;
+    }
+
+    .postText{
+        width: 63vw;
+        font-size: 1.25vw;
+    }
+
+    .username, i,.post-feedback button{
+        font-size: 1.5vw;
+    }    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .landingPage{
+        width: 80vw;
+        min-height: 75vh;
+    }
+
+    .textarea{
+        width: 65vw;
+    }
+
+    .textarea{
+        font-size: 2vw;
+    }
+
+    .post-form{
+        width: 75vw;
+        font-size: 2.5vw;
+    }
+
+    .alert{
+        width: 75vw;
+        font-size: 1.5vw;
+    }
+
+    .container{
+        min-height: 100vh;
+        background-image: var(--gradient);
+        display: flex;
+        justify-content: center;
+        padding: 15vh 0 10vh 0;
+    }
+
+    .post{
+        width: 75vw;
+    }
+
+    .postText{
+        width: 73vw;
+        font-size: 1.25vw;
+    }
+
+    .username, i ,.post-feedback button{
+        font-size: 1.5vw;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .landingPage{
+        width: 80vw;
+        min-height: 80vh;
+    }
+
+    .textarea::placeholder,.post-form textarea{
+        font-size: 2.5vw;
+    }
+
+    .textarea{
+        width: 60vw;
+    }
+
+    .post-form{
+        width: 70vw;
+    }
+
+    .alert{
+        width: 70vw;
+        font-size: 2.5vw;
+    }
+
+    .container{
+        min-height: 100vh;
+        background-image: var(--gradient);
+        display: flex;
+        justify-content: center;
+        padding: 10vh 0 10vh 0;
+    }
+
+    .post{
+        width: 70vw;
+    }
+
+    .postText{
+        width: 70vw;
+        font-size: 2.5vw;
+    }
+    
+    .username , i , .post-feedback button{
+        font-size: 3vw;
+    }
+    
+}
+
+.textarea{
+    color: var(--primary-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    resize: none;
+}
+
+.textarea:focus{
+    outline: none;
+}
+
+.textarea::placeholder{
+    color: var(--other-color);
+}
+
+.post-form{
+    border: 0.1vw solid var(--primary-color);
+    margin: 1vw auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+}
+
+.share{
+    color: white;
+    background-color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 1.25vw;
+    padding: 0.5vw;
+    cursor: pointer;
+}
+
+/*Alert message*/
+.alert{
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.25vw 0;
+    margin-bottom: 1vw;
+    font-family: Poppins;
+}
+
+/*Post*/
+.row1{
+    display: flex;
+    align-items: center;
+    width: inherit;
+    padding-right: 1vw;
+    justify-content: space-between;
+}
+
+.post{
+    margin: 1.5vw auto;
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
+    border: 0.1vw solid var(--primary-color);
+    box-shadow: 0 2px 4px var(--primary-color);
+}
+
+i{
+    cursor: pointer;
+}
+.post-buttons button, .post-feedback button{
+    background: none;
+}
+
+.postText{
+    color: var(--secondary-color);
+    overflow-wrap: break-word;
+    margin: 1vw 0;
+}
+
+.username{
+    color: var(--primary-color);
+    font-family: Poppins;
+}
+
+.bi-trash{
+    color: red;
+    padding: 0.1vw;
+}
+
+.bi-pencil-square{
+    padding: 0.1vw;
+    color: var(--primary-color);
+}
+
+.bi-hand-thumbs-up-fill , .bi-hand-thumbs-down-fill{
+    color: var(--other-color)
+}
+
+.post-feedback{
+    padding:  0.25vw 0vw;
+}
+
+.post-feedback button{
+    font-family: Poppins;
+    color: var(--secondary-color);
+}
