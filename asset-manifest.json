@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/task3/static/css/main.ccab1be1.css",
+    "main.js": "/task3/static/js/main.1f5b454c.js",
+    "static/js/787.b3ca4345.chunk.js": "/task3/static/js/787.b3ca4345.chunk.js",
+    "static/media/Poppins-Bold.ttf": "/task3/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/rimouski sb.ttf": "/task3/static/media/rimouski sb.69f453c6580dcad6b397.ttf",
+    "static/media/Group3.png": "/task3/static/media/Group3.59ab9b2081aba9bf418a.png",
+    "static/media/Group1.png": "/task3/static/media/Group1.1582b8183dd56d8528e2.png",
+    "static/media/Group4.png": "/task3/static/media/Group4.42a252d64317cdec371b.png",
+    "static/media/Group2.png": "/task3/static/media/Group2.dcc41159587ab8017f48.png",
+    "index.html": "/task3/index.html",
+    "main.ccab1be1.css.map": "/task3/static/css/main.ccab1be1.css.map",
+    "main.1f5b454c.js.map": "/task3/static/js/main.1f5b454c.js.map",
+    "787.b3ca4345.chunk.js.map": "/task3/static/js/787.b3ca4345.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccab1be1.css",
+    "static/js/main.1f5b454c.js"
+  ]
+}
